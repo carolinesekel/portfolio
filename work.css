@@ -1,0 +1,156 @@
+.container {
+    margin: 0 auto;
+    max-width: 680px;
+}
+
+.intro {
+    margin-top: 100px;
+}
+
+.intro h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+.container p {
+    font-size: 1.17em;
+}
+
+.hero {
+    background-image: url("assets/curb/hero.jpeg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.raiden-hero {
+    margin-top: 50px;
+    background-image: url("assets/raiden/hero.png");
+    height: 350px;
+}
+
+.container .heading,
+.container .sub-head {
+    font-weight: 700;
+}
+
+.container .heading {
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
+.user-stories {
+    display: flex;
+    justify-content: space-between;
+}
+
+blockquote {
+    margin-left: 0;
+    padding-left: 1em;
+    border-left: 0.2em solid;
+    max-width: 200px;
+}
+
+.adjectives blockquote {
+    line-height: 2;
+}
+
+blockquote:last-child {
+    margin-right: 0;
+}
+
+blockquote::before,
+blockquote::after {
+    content: '"';
+    font-weight: 700;
+}
+
+.adjectives blockquote::before,
+.adjectives blockquote::after {
+    content: none;
+}
+
+img {
+    max-width: 200px;
+    margin-right: 12px;
+}
+
+img:last-child {
+    margin-right: 0;
+}
+
+.screens {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.screens img {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 var(--shadow);
+}
+
+.paper {
+    flex-wrap: wrap;
+}
+
+.paper img {
+    margin-bottom: 20px;
+}
+
+.paper img:nth-child(3) {
+    margin-right: 0;
+}
+
+.raiden-inspo div {
+    /*max-width: 640px;
+    margin-right: 0;*/
+    width: 47%;
+    margin-right: 20px;
+    height: 200px;
+    border-radius: 5px;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 var(--shadow);
+    margin-bottom: 20px;
+}
+
+.raiden-inspo .row1-1 {
+    background-image: url(assets/raiden/inspo/inspo-1.png);
+    background-size: contain;
+}
+
+.raiden-inspo .row1-2 {
+    background-image: url(assets/raiden/inspo/inspo-2.png);
+}
+
+.raiden-inspo .row2-1 {
+    background-image: url(assets/raiden/inspo/inspo-3.png);
+}
+
+.raiden-inspo .row2-2 {
+    background-image: url(assets/raiden/inspo/inspo-4.png);
+}
+
+.raiden-screens img {
+    max-width: 100%;
+    height: auto;
+}
+
+video,
+.iteration-2-screen,
+iframe {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 var(--shadow);
+}
+
+.iteration-2-screen {
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
