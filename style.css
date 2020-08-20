@@ -2,6 +2,7 @@
     --primary: #262626;
     --background: white;
     --shadow: rgba(0, 0, 0, 0.2);
+    --shadow-emphasis: rgba(0, 0, 0, 0.35);
 }
 
 
@@ -138,6 +139,7 @@ footer nav a {
     object-position: 0 0;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 var(--shadow);
+    transition: all .3s;
 }
 
 .work .insta,
@@ -171,6 +173,10 @@ footer nav a {
     /*border-bottom: 1px solid var(--primary);*/
     border: 1px solid var(--primary);
     transition: all .3s;
+}
+
+.work:hover img {
+    box-shadow: 0 4px 8px 0 var(--shadow-emphasis);
 }
 
 .work .btn:hover {
