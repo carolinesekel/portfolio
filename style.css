@@ -4,6 +4,9 @@
     --shadow: rgba(0, 0, 0, 0.2);
 }
 
+
+/***** GLOBAL FOR ALL PAGES  ***/
+
 body {
     font-family: "Karla", sans-serif;
     padding: 0 30px;
@@ -11,6 +14,7 @@ body {
 }
 
 a {
+    font-family: "Karla", sans-serif;
     color: var(--primary);
     text-decoration: none;
     font-size: 1.17em;
@@ -37,10 +41,10 @@ header nav {
 }
 
 header nav a {
-    font-family: "Karla", sans-serif;
+    /*font-family: "Karla", sans-serif;*/
     font-size: 1em;
-    color: var(--primary);
-    text-decoration: none;
+    /*color: var(--primary);
+    text-decoration: none;*/
     margin-right: 1em;
 }
 
@@ -63,6 +67,27 @@ nav:hover a {
 nav a:hover {
     opacity: 1;
 }
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 1.5em;
+    padding-top: 1em;
+}
+
+footer p {
+    margin-right: 1em;
+    font-size: 1.5em;
+}
+
+footer nav a {
+    margin-right: 8px;
+    font-size: 1.5em;
+}
+
+
+/**** HOME PAGE / WORK PAGE ****/
 
 .intro {
     margin: 100px auto 100px auto;
@@ -154,24 +179,6 @@ nav a:hover {
     /*opacity: .33;*/
 }
 
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-top: 1.5em;
-    padding-top: 1em;
-}
-
-footer p {
-    margin-right: 1em;
-    font-size: 1.5em;
-}
-
-footer nav a {
-    margin-right: 8px;
-    font-size: 1.5em;
-}
-
 
 /*******ABOUT PAGE*****/
 
@@ -203,15 +210,15 @@ footer nav a {
     margin-top: 40px;
 }
 
-blockquote {
+.testimonial blockquote {
     margin-left: 0;
     padding-left: 1em;
     border-left: 0.2em solid;
     font-size: 1.17em;
 }
 
-blockquote::before,
-blockquote::after {
+.testimonial blockquote::before,
+.testimonial blockquote::after {
     content: '"';
     font-weight: 700;
 }
@@ -255,11 +262,11 @@ blockquote::after {
     max-width: 680px;
 }
 
-.intro {
+.title {
     margin-top: 100px;
 }
 
-.intro h1 {
+.title h1 {
     font-weight: 700;
 }
 
@@ -328,12 +335,12 @@ blockquote::after {
     content: none;
 }
 
-img {
+.screens img {
     max-width: 200px;
     margin-right: 12px;
 }
 
-img:last-child {
+.screens img:last-child {
     margin-right: 0;
 }
 
