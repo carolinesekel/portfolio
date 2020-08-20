@@ -257,10 +257,12 @@ footer nav a {
 
 /***** CASE STUDY PAGES *****/
 
+
+/*this is taken care of from about page
 .container {
     margin: 0 auto;
     max-width: 680px;
-}
+}*/
 
 .title {
     margin-top: 100px;
