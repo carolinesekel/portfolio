@@ -10,7 +10,15 @@ jQuery(document).ready(function($) {
         window.history.pushState(null, null, href)
 
         $(".internal").removeClass("selected")
-        $(this).addClass("selected")
+            //if clicked name in upper left to go home also 
+        if (href == "index.html") {
+            $(".home").addClass("selected")
+        }
+        //if clicked a different internal link
+        else {
+            $(this).addClass("selected")
+        }
+
 
         $.ajax({
             url: href,
