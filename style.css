@@ -357,6 +357,8 @@ blockquote::after {
     display: flex;
     justify-content: space-between;
     margin: 40px 0;
+    /*avoid height stretch in safari*/
+    align-items: flex-start;
 }
 
 .screens img {
