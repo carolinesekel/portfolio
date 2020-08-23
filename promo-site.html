@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <a class="internal" href="index.html">
+            <h2>Caroline Sekel</h2>
+        </a>
+        <nav>
+            <a class="internal home" href="index.html">Work</a>
+            <a class="internal" href="about.html">About</a>
+            <a target="_blank" href="assets/caroline_sekel_resume.pdf" download>Resume</a>
+        </nav>
+    </header>
+    <div class="main-content">
+        <div class="title container">
+            <h1>@carolinedrawssometimes</h1>
+            <h2>Promotional website for a drawing Instagram account.</h2>
+        </div>
+        <div class="insta-hero hero">
+            <!--background image, content set in css-->
+        </div>
+        <div class="container">
+            <p class="heading">Overview</p>
+            <p>I created this website as a promotion for a drawing Instagram account. The site uses a parallax scrolling effect as you scroll through each word of the Instagram handle, and was made with only HTML and CSS.</p>
+            <p class="heading">Inspiration</p>
+            <p>I completed SuperHi’s online course Foundation HTML, CSS + JavaScript, after graduating from college. Despite my degree in computer science, I had limited experience with web development and wanted to learn more. My first homework assignment
+                in the course, which can be found <a class="text-link" target="_blank" href="https://homework-1-86.superhi.com/">here</a>, inspired me to design and develop my own version.</p>
+            <p class="heading">Typography</p>
+            <p>I chose a simple geometric sans-serif font that would not compete with or distract from the hand-drawn elements but would, at the same time, provide a nice contrast.</p>
+            <div class="screens raiden-screens"><img src="assets/instagram/typeface.png"></div>
+            <p>In Adobe Illustrator, on a desktop-sized artboard, I typed out <i>caroline</i> and <i>sometimes</i> in the Spartan typeface. I sized them how I wanted, aligned them in the center, and exported the artboards as SVGs.</p>
+            <p class="heading">Visual Elements</p>
+            <p class="sub-head">Colors</p>
+            <p>I wanted to use colors that matched the aesthetic of the Instagram grid.</p>
+            <div class="screens raiden-screens"><img src="assets/instagram/grid.png"></div>
+            <p>I used coolors.co to select a color palette for the site and generated palettes until I came across some fun, bright colors similar to those in the grid.</p>
+            <div class="screens raiden-screens"><img src="assets/instagram/colors.png"></div>
+            <p class="sub-head">Hand-drawn Elements</p>
+            <p>I hand drew the word <i>draws</i>, image traced the sketch to get a vector image, and followed the same steps as the typographic elements to obtain a usable SVG. Then I selected one of my favorite drawings, that had already been vectorized,
+                and repeated the process.</p>
+            <div class="screens insta-drawn">
+                <img src="assets/instagram/hand-drawn-1.png">
+                <img src="assets/instagram/hand-drawn-2.png">
+            </div>
+            <p class="heading">Development</p>
+            <p>Once I had collected all of the site’s assets, it was easy to put the whole site together. Since a completed homework assignment inspired this project, I could borrow most of the code I had already written and just replace the CSS where needed.</p>
+            <p class="heading">Launch</p>
+            <p>I decided to use Github pages to host my site for a few reasons. First, since this was a personal and mostly experimental project, I didn’t want to pay for hosting or a custom domain. Using Github pages enabled me to publish my site on a free
+                default domain. Also, I am already comfortable with the platform and can use version control to make changes to the site in the future.</p>
+            <p class="heading">Final Product</p>
+            <video width="100%" height="auto" controls>
+                    <source src="assets/instagram/final-product.mov">
+                  Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <footer>
+        <p>Let's connect!</p>
+        <nav class="socials">
+            <a targer="_blank" href="mailto:caroline.sekel@uconn.edu"><i class="fas fa-envelope-square"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/carolinesekel/"><i class="fab fa-linkedin"></i></a>
+            <a target="_blank" href=" https://github.com/carolinesekel"><i class="fab fa-github-square"></i></a>
+        </nav>
+    </footer>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

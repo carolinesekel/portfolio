@@ -424,3 +424,16 @@ iframe {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.insta-hero {
+    background-image: url("assets/instagram/insta-hero.png");
+}
+
+.text-link {
+    font-size: inherit;
+    text-decoration: underline;
+}
+
+.insta-drawn img {
+    max-width: 320px;
+}
