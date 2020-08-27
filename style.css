@@ -10,7 +10,7 @@
 
 body {
     font-family: "Karla", sans-serif;
-    padding: 0 30px;
+    padding: 80px 30px 0;
     color: var(--primary);
 }
 
@@ -26,19 +26,32 @@ h1 {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--background);
+}
+
+.nav-up {
+    top: -80px;
 }
 
 header h2 {
     font-weight: 700;
     text-transform: uppercase;
+    padding-left: 38px;
 }
 
 header nav {
     display: flex;
     justify-content: space-between;
+    /*fix formatting from fixed position header*/
+    padding-right: 38px;
 }
 
 header nav a {
