@@ -85,18 +85,24 @@ nav a:hover {
 footer {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin-top: 1.5em;
     padding-top: 1em;
 }
 
 footer p {
-    margin-right: 1em;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
-footer nav a {
-    margin-right: 8px;
+footer nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer nav a,
+footer nav p {
+    margin-right: 1em;
     font-size: 1.5em;
 }
 
@@ -172,7 +178,7 @@ footer nav a {
     margin-right: 20px;
 }
 
-.work .btn {
+.btn {
     font-size: 1em;
     color: var(--primary);
     margin-right: 12px;
@@ -192,7 +198,7 @@ footer nav a {
     box-shadow: 0 4px 8px 0 var(--shadow-emphasis);
 }
 
-.work .btn:hover {
+.btn:hover {
     color: var(--background);
     background-color: var(--primary);
     /*opacity: .33;*/
@@ -462,4 +468,12 @@ iframe {
 
 .brand-inspo img {
     margin-bottom: 20px;
+}
+
+.next-link {
+    margin-top: 40px;
+}
+
+.next {
+    border: 1px solid var(--primary);
 }
