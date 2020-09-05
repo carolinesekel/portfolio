@@ -84,6 +84,7 @@ nav a:hover {
 
 footer {
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
     margin-top: 1.5em;
@@ -476,4 +477,94 @@ iframe {
 
 .next {
     border: 1px solid var(--primary);
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:500px) {
+    .body {
+        padding: 40px 12px 0;
+    }
+    header {
+        display: block;
+        padding-bottom: 8px;
+    }
+    header nav {
+        justify-content: left;
+        padding-right: 0;
+        padding-left: 38px;
+    }
+    .nav-up {
+        top: -108px;
+    }
+    footer {
+        display: block;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    footer nav p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .intro {
+        margin: 40px auto 40px auto;
+    }
+    .intro h1,
+    .title h1 {
+        font-size: 1.5em;
+    }
+    .work {
+        width: auto;
+    }
+    .btn {
+        border: 1px solid var(--primary);
+    }
+    .btn:active {
+        color: var(--background);
+        background-color: var(--primary);
+    }
+    .work img {
+        width: 300px;
+    }
+    .container {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    .title {
+        margin-top: 40px;
+    }
+    .testimonial blockquote {
+        font-size: 1em;
+    }
+    .person h2,
+    .person h3 {
+        font-size: 1.17em;
+    }
+    .person:last-child {
+        margin-bottom: 40px;
+    }
+    .screens {
+        display: block;
+    }
+    .screens img {
+        margin-bottom: 20px;
+    }
+    .raiden-inspo div {
+        width: auto;
+    }
+    .user-stories {
+        display: block;
+    }
+    iframe {
+        width: 300px;
+        height: 169px;
+    }
+    .long {
+        margin-right: 0;
+        font-size: .85em;
+    }
+    .insta-drawn img {
+        max-width: 300px;
+    }
 }
