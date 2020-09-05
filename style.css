@@ -156,7 +156,7 @@ footer nav a {
 }
 
 .work .insta,
-.work .trans {
+.work .brand {
     object-position: 50% 50%;
 }
 
@@ -387,7 +387,8 @@ blockquote::after {
     margin-bottom: 20px;
 }
 
-.paper img:nth-child(3) {
+.paper img:nth-child(3),
+.brand-inspo img:nth-child(3) {
     margin-right: 0;
 }
 
@@ -449,4 +450,16 @@ iframe {
 
 .insta-drawn img {
     max-width: 320px;
+}
+
+.brand-hero {
+    background-image: url("assets/branding/mockups.png");
+}
+
+.brand-inspo {
+    flex-wrap: wrap;
+}
+
+.brand-inspo img {
+    margin-bottom: 20px;
 }
