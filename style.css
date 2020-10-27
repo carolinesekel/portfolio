@@ -396,6 +396,7 @@ blockquote::after {
 }
 
 .paper img:nth-child(3),
+.paper img:nth-child(6),
 .brand-inspo img:nth-child(3) {
     margin-right: 0;
 }
