@@ -480,6 +480,15 @@ iframe {
     border: 1px solid var(--primary);
 }
 
+.synchrony-hero {
+    background-image: url("assets/synchrony/mockup.png");
+}
+
+.pain-points blockquote,
+.metrics blockquote {
+    max-width: 100%;
+}
+
 
 /* RESPONSIVE */
 

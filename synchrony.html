@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <a class="internal" href="index.html">
+            <h2>Caroline Sekel</h2>
+        </a>
+        <nav>
+            <a class="internal home" href="index.html">Work</a>
+            <a class="internal" href="about.html">About</a>
+            <a target="_blank" href="assets/caroline_sekel_resume.pdf">Resume</a>
+        </nav>
+    </header>
+    <div class="main-content">
+        <div class="title container">
+            <h1>Synchrony</h1>
+            <h2>Mobile app design and development, enabling Synchrony employees to manage meeting room reservations.</h2>
+        </div>
+        <div class="synchrony-hero hero">
+            <!--background image, content set in css-->
+        </div>
+        <div class="container">
+            <p class="heading">Overview</p>
+            <p>For my senior design project, I worked in a team of four to conceptualize, document, design, and develop a mobile application to manage conference room reservations for Synchrony’s Innovation Station. Employees in the Innovation Station needed
+                a way to reserve meeting rooms and see what rooms were available that was simpler and easier to use than their existing system. We worked to design and develop the application throughout the school year, meeting with our advisor and Synchrony
+                sponsors weekly. We focused on design and documentation in the first semester and development in the second.</p>
+            <p class="heading">Research</p>
+            <p>To better understand the problem space, we interviewed our sponsors at Synchrony, who were engineers in the Innovation Station. We asked them about our potential users and how they currently manage meeting room reservations. We learned what
+                they were struggling with and developed an actionable problem statement based on our insights.</p>
+            <p class="sub-head">Users</p>
+            <p>The Innovation Station contains nine meeting rooms of various sizes and is home to multiple collaborative, cross-functional teams that follow agile development methodologies. Employees who would use our application might be engineers, marketers,
+                front-end developers, IT professionals, etc. who would have access to both desktop and mobile devices at almost all times during the workday.</p>
+            <p class="sub-head">Pain Points</p>
+            <p>Our interviewees described the following as the primary pain points with the current room reservation system.</p>
+            <div class="pain-points">
+                <blockquote>It is hard to schedule meetings and keep track of who is scheduled.</blockquote>
+                <blockquote>It is difficult to see if a room is taken or free.</blockquote>
+                <blockquote>Meetings often get blocked because they are not synced with the calendar.</blockquote>
+                <blockquote>Coordination is difficult between teams and within teams leading to scheduling conflicts.</blockquote>
+            </div>
+            <p class="sub-head">Problem Statement</p>
+            <p>The employees of the Innovation station need a better way to schedule and manage meetings and view meeting room availability because the existing system causes conflict and frustration, distracting from the actual work that needs to be done.
+            </p>
+            <p class="heading">Ideate</p>
+            <p>To begin the process of designing a solution, we asked ourselves, “How might we centralize and simplify the room reservation process?” and kept this question in mind as we brainstormed possible ways to solve the problem. </p>
+            <p>We shared our ideas with our sponsors to get feedback on what they thought would work best in the Synchrony environment. We decided to design a web application that allowed employees to reserve available rooms and see what rooms were booked.
+                We planned to integrate the employees’ Microsoft 365 accounts to solve scheduling conflicts related to meetings not being synced with the calendar. From there, we thought about potential user flows and began sketching what we thought the
+                app should look like.</p>
+            <p class="sub-head">User Flow Diagram</p>
+            <p>We individually drew options for user flow diagrams and discussed the pros and cons of each before combining ideas and deciding on a flow we wanted to move forward with. I used LucidChart to clean up and finalize our diagram.</p>
+            <div class="screens raiden-screens">
+                <img src="assets/synchrony/user-flow.png">
+            </div>
+            <p class="sub-head">Sketches</p>
+            <p>We next used sketches to visualize the user flow steps would look like on a screen. I prefer to start designing with sketches to get my ideas onto paper quickly. I like to get feedback, fail fast, and iteratively improve before using design
+                software.
+            </p>
+            <div class="screens raiden-screens">
+                <img src="assets/synchrony/initial-sketches.png">
+            </div>
+            <p class="heading">Validate</p>
+            <p>Reviewing our sketches, we realized that some screens resembled the university library website to reserve study rooms. Instead of reinventing the wheel, we decided to work from the library system and alter it to fit Synchrony’s needs. To validate
+                this new direction and learn more about what needed to be improved from the library website, we surveyed students about their experiences reserving study rooms.</p>
+            <p class="sub-head">Library Application</p>
+            <div class="screens raiden-screens">
+                <img src="assets/synchrony/library.png">
+            </div>
+            <p class="sub-head">Survey</p>
+            <p>A team member and I created a Google Form to survey 30 students and asked them what they liked and disliked about the system and what they would change to make their lives easier. These students were not our target users, and many of their
+                responses were about other students’ behaviors (ex: not showing up to a room you reserved) however, we were able to extrapolate some of the results to inform our design decisions.</p>
+            <p class="sub-head">Results</p>
+            <p>Positive feedback indicated that our idea had potential, and we decided to move forward with modeling our design after the library system would work.</p>
+            <div class="metrics adjectives">
+                <blockquote>
+                    14 people said the system is easy to use, convenient, or efficient.<br>5 people said that it was clear which rooms were available.<br>"You can clearly see what spaces are available or not."
+
+                </blockquote>
+            </div>
+            <p>We also took note of responses that showed what we could change from the library system to make our own design more effective.</p>
+            <div class="metrics adjectives">
+                <blockquote>
+                    3 people mentioned difficulties when using a mobile device. <br> 4 people mentioned wanting options for filtering the rooms. <br> “It would be easier if you could just write what time you need a room, and then the available rooms would
+                    show up.”<br> “Sometimes, it gets confusing to differentiate between days.”
+
+                </blockquote>
+            </div>
+            <p class="heading">Prototype</p>
+            <p>I used Adobe XD to create a click-through wireframe that combined some of our sketches with the parts of the library system, and decided to use a wireframe kit to save time on designing individual components.</p>
+            <p class="sub-head">Wireframe</p>
+            <video width="100%" height="auto" controls>
+                    <source src="assets/synchrony/wireframe-video.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+            </video>
+            <p>Our sponsors liked that the wireframe was clean and straightforward, with everything on one screen at the same time. While they expressed that the wireframe was a good design for the minimum viable product, the sponsors challenged us to think
+                about adding features and more functionality - to think about spacing and what the design would look like if the requirements were to change. Before leaving for the semester, we discussed different features to add, like filtering rooms,
+                updated the wireframe with Synchrony colors, and sketched where additional features might go. The sponsors were a little hung up on the fact that the wireframe was in blue, so in hindsight, a grayscale wireframe kit might have been better
+                to use.</p>
+
+            <div class="screens raiden-screens">
+                <img src="assets/synchrony/wireframe.png">
+            </div>
+            <p class="heading">Development</p>
+            <p>As we were wrapping up the first semester by completing our wireframe and design plans and writing our 75-page documentation paper, we also decided what our technology stack would be for the application. We made our development decisions based
+                on our individual experiences and comfort with different programming languages.</p>
+            <p class="sub-head">Technology Stack</p>
+            <p>The team member with the most experience in developing web and mobile applications suggested using the Ionic Framework because it would be easy to build both web and mobile applications without rewriting much of the code. Additionally, an
+                Ionic application could use plugins easily to connect a database with SQLite.</p>
+            <p class="sub-head">Database Schema & Relations</p>
+            <p>Over the break, I got a head start on development by conceptualizing the database schemas and relations we would need for the application. I created an Entity-Relationship Diagram using LucidChart and got to work creating sample tables and
+                figuring out the necessary SQL queries that the app would need to run. The database schemas evolved a little throughout development but mostly adhered to my initial diagram.</p>
+            <div class="screens raiden-screens">
+                <img src="assets/synchrony/database.png">
+            </div>
+            <p class="heading">Ideate & Prototype - Take 2</p>
+            <div class="screens raiden-screens">
+                <img src="assets/synchrony/mobile-sketches.png">
+            </div>
+            <div class="next-link"><a class="btn next internal" href="curb.html"> Next Project: Curb &nearr;</a></div>
+
+        </div>
+    </div>
+    <footer>
+
+
+        <nav class="socials">
+            <p>Let's connect!</p>
+            <a target="_blank" href="mailto:caroline.sekel@uconn.edu"><i class="fas fa-envelope-square"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/carolinesekel/"><i class="fab fa-linkedin"></i></a>
+            <a target="_blank" href=" https://github.com/carolinesekel"><i class="fab fa-github-square"></i></a>
+        </nav>
+
+        <p>&copy; 2020 Caroline Sekel</p>
+    </footer>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
